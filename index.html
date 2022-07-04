@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Wikipedia Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- to add a bootstrap css we use the link tag -->
+    <!-- to add a java query from bootstrap we use the script tag -->
+    <!--  to add the javascript we use the script tag at athe end and copy paste the code from bootstrap -->
+</head>
+
+<body>
+    <header>
+        <h1>The Cats Wiki</h1>
+    </header>
+    <section class="banner">
+        <img src="img/cats-banner-image2.jpg" alt="group of cats banner image">
+        <div class="welcome">
+            <h2>Welcome to <br><span> The Cats Wiki!</span></h2>
+            <p>This is a Wiki for all things cats!</p>
+        </div>
+    </section>
+
+    <nav class="main-nav">
+        <ul>
+            <li> <a href="navigation-bar-links/what-we-eat.html">What They Eat</a></li>
+            <li> <a href="navigation-bar-links/how-long-we-sleep.html">How Long They Sleep</a></li>
+            <li><a href="navigation-bar-links/with-what-we-play.html">With What They Play</a></li>
+
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Cats Breeds
+                    </button>
+                    <div class="dropdown-content">
+
+                        <a href="cats-breeds/european-shorthair.html">European Shorthair</a>
+                        <a href="cats-breeds/british-shorthair.html">British Shorthair</a>
+                        <a href="cats-breeds/turkish-angora.html">Turkish Angora</a>
+                        <a href="cats-breeds/scottish-fold.html">Scottish Fold</a>
+                        <a href="cats-breeds/persian-cat.html">Persian</a>
+                        <a href="cats-breeds/siamese.html">Siamese</a>
+                        <a href="cats-breeds/sphynx.html">Sphynx</a>
+
+                    </div>
+
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <article>
+        <p>Hi,
+            <br>
+            My name is <b>Oscar</b> and I am the cutest cat in the world, dare to tell me otherwise!
+            <br>
+            I am also adventurous and I like to go out and explore the world.
+            <br>
+
+            But That's not all! I also like to play with my friends and I am a very social cat.
+            so I created this website to introduce you to the cats world and to know my friends, now behave and be
+            nice to us!
+            <br>
+            I will tell you about my cats friends and their breeds, and will show you how do they look.
+            what they eat and how they sleep, almost everything about them. Get ready!
+        </p>
+    </article>
+    <ul class="images">
+
+
+        <li>
+            <img src="img/adventutous-oscar.jpg" onmouseover="style.width='100px'" onmouseout="style.width='200px'">
+        </li>
+        <li><img src="img/oscar-the-cutest.jpg" alt="oscar the cutest cat"
+                onmouseover="document.body.style.backgroundColor ='#3d9fffb3'"
+                onmouseout="document.body.style.backgroundColor ='white'">
+            <!-- incapsulate in a function -->
+        </li>
+
+
+    </ul>
+
+    <div class="alert">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        <strong>Warning!</strong> There are alot of Cats things here.
+    </div>
+
+
+    <div class="subscribe">
+        <h2 class="subscribe__title">Let's keep in touch</h2>
+        <p class="subscribe__copy">Subscribe to keep up with fresh news and exciting updates. We promise not to spam
+            you!</p>
+
+        <div class="form">
+            <form onsubmit="confirmInput()" action="/thank-you-submit.html" target="_blank">
+                <input class="form__email" type="email" placeholder="Enter your email address">
+                <button class="form__button">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyright">&copy; Cats Wiki 2020</p>
+    </footer>
+
+
+</body>
+
+</html>
